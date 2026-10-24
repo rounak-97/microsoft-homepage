@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Microsoft (Clone)</title>
+
+  <!-- Link CSS file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Link Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!-- Navigation Bar Section -->
+
+    <nav>
+      <div class="left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+          <i class="ri-menu-line"></i>
+        </button>
+
+        <img width="120" src="https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png" alt="Microsoft Logo" />
+
+        <div class="nav-links">
+          <p>Microsoft365</p>
+          <p>Azure</p>
+          <p>Copilot</p>
+          <p>Windows</p>
+          <p>Surface</p>
+          <p>Xbox</p>
+          <p>Support</p>
+        </div>
+      </div>
+
+      <div class="mobile-actions">
+        <button aria-label="Search"><i class="ri-search-line"></i></button>
+        <button aria-label="Cart"><i class="ri-shopping-cart-2-line"></i></button>
+        <button class="mobile-profile" aria-label="Sign in">
+          <img src="https://4kwallpapers.com/images/walls/thumbs_2t/17348.jpg" alt="Profile" />
+        </button>
+      </div>
+
+      <div class="right">
+        <p>All Microsoft <span><i class="ri-arrow-down-s-line"></i></span></p>
+        <p>Search <span><i class="ri-search-line"></i></span></p>
+        <p>Cart <span><i class="ri-shopping-cart-2-line"></i></span></p>
+        <p>Sign in</p>
+        <div class="profile"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <section class="carousel">
+      <!-- First Slide: Surface -->
+      <div class="slide active">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-Surface-Portfolio-Snapdragon-Platinum-Standard?&resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=85&fit=constrain&dpr=on,2"
+          alt="Microsoft Surface" />
+
+        <div class="content surface-content">
+          <a href="#" class="new-label">New</a>
+
+          <h1>Our most portable Surface lineup</h1>
+
+          <p>
+            Big ideas, busy days, creative moments. Surface Pro and Surface
+            Laptop are designed to keep pace.
+          </p>
+
+          <a href="#" class="learn-more">Learn more</a>
+        </div>
+      </div>
+
+      <!-- Second Slide: Copilot -->
+      <div class="slide">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-M365-Icon-Bounce-Premium-Left?&resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=85&fit=constrain&dpr=on,2"
+          alt="Microsoft Copilot" />
+
+        <div class="content copilot-content">
+          <h1>Go further with Copilot</h1>
+          <p>
+            With Microsoft 365, get productivity apps with Copilot, advanced
+            AI features and cloud <br />
+            storage all in one plan.
+          </p>
+
+          <a href="#" class="learn-more">Shop Microsoft 365</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel Controls -->
+    <div class="carousel-controls">
+      <button id="prevBtn" aria-label="Previous slide">
+        <i class="ri-arrow-left-s-line"></i>
+      </button>
+
+      <div class="center-controls">
+        <div class="slide-indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+        </div>
+
+        <button id="playPauseBtn" aria-label="Pause slideshow">
+          <i class="ri-pause-fill"></i>
+        </button>
+      </div>
+
+      <button id="nextBtn" aria-label="Next slide">
+        <i class="ri-arrow-right-s-line"></i>
+      </button>
+    </div>
+
+    <!-- Store Utilities Section -->
+    <div class="storeArea">
+      <!-- Microsoft 365 -->
+      <div class="iconBoxes">
+        <i class="ri-microsoft-fill"></i>
+        <p>Shop Microsoft 365</p>
+      </div>
+
+      <!-- Xbox Controller -->
+      <div class="iconBoxes">
+        <i class="ri-gamepad-fill"></i>
+        <p>Shop XBOX</p>
+      </div>
+
+      <!-- Windows 11 -->
+      <div class="iconBoxes">
+        <i class="ri-windows-fill"></i>
+        <p>Get Windows 11</p>
+      </div>
+
+      <!-- Surface -->
+      <div class="iconBoxes">
+        <i class="ri-macbook-line"></i>
+        <p>Shop Surface</p>
+      </div>
+    </div>
+
+    <!-- Product Cards Section -->
+    <section class="productCards">
+      <!-- Card 1: Microsoft OneDrive -->
+      <article class="product-card">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Soft-CP-OneDriveCampaignRefresh-2?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+          alt="Microsoft OneDrive" />
+        <div class="card-content">
+          <h2>Microsoft OneDrive</h2>
+          <p>
+            Save your files and photos to OneDrive and access them from any
+            device, anywhere.
+          </p>
+          <a href="#" class="card-button">Learn more</a>
+        </div>
+      </article>
+
+      <!-- Card 2: Xbox Game Pass Ultimate -->
+      <article class="product-card">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/455251-Card-Feature-Xbox-Game-Pass?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+          alt="Xbox Game Pass Ultimate" />
+        <div class="card-content">
+          <h2>Xbox Game Pass Ultimate</h2>
+          <p>
+            Play new titles on day one. Enjoy hundreds of high-quality games
+            with friends on console, PC or cloud.
+          </p>
+          <a href="#" class="card-button">Join now</a>
+        </div>
+      </article>
+
+      <!-- Card 3: Xbox Series X -->
+      <article class="product-card">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSX-CP-Xbox-Series-X?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+          alt="Xbox Series X console and controller" />
+        <div class="card-content">
+          <h2>Xbox Series X</h2>
+          <p>The fastest, most powerful XBOX ever.</p>
+          <a href="#" class="card-button">Shop XBOX Series X</a>
+        </div>
+      </article>
+
+      <!-- Card 4: Xbox Series S -->
+      <article class="product-card">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-XSS-CP-Xbox-Series-S-Evergreen?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+          alt="Xbox Series S console and controller" />
+        <div class="card-content">
+          <h2>Xbox Series S</h2>
+          <p>Next-gen performance in the smallest XBOX ever.</p>
+          <a href="#" class="card-button">Shop XBOX Series S</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- Designed for Life Section -->
+    <section class="designed-life" aria-labelledby="designed-life-heading">
+      <div class="designed-life-content">
+        <h2 id="designed-life-heading">
+          Designed for life today - and tomorrow
+        </h2>
+        <p>
+          The next-generation of games. Your goals. Friends and family.
+          Windows 11 was made <br />
+          to bring you closer to everything you love.
+        </p>
+        <a href="#" class="designed-life-button"> See if your PC is ready </a>
+      </div>
+
+      <div class="designed-life-image">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Card-Horizontal-Windows-11-Business-Transformation?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=95&fit=constrain"
+          alt="Microsoft Surface And Microsoft Windows details" />
+      </div>
+    </section>
+
+    <!-- For Business Section -->
+    <section class="business-section">
+      <h2>For business</h2>
+
+      <div class="business-cards">
+        <!-- Card 1: Surface for Business -->
+        <article class="business-card">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Reimagine-Surface-Family-Pro-Intel-13in-12Ed-Laptop-13in-1Ed-13pt8in-15in-8Ed-Platinum-Black-Keyboa-NmNXFcYtm9?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+            alt="Surface devices for business" />
+
+          <div class="business-card-content">
+            <h3>New Surface for Business PCs are here</h3>
+
+            <p>
+              Fast performance for demanding apps, all-day battery life and
+              built-in security - powered by Intel® Core™ Ultra Series 3
+              processors.*
+            </p>
+
+            <a href="#" class="business-card-button">Learn more</a>
+          </div>
+        </article>
+
+        <!-- Card 2: Microsoft Copilot -->
+        <article class="business-card">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-365-Copilot-COMMR-0625?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+            alt="Microsoft Copilot for business" />
+
+          <div class="business-card-content">
+            <h3>Microsoft Copilot</h3>
+
+            <p>
+              Save time and focus on the things that matter most with AI in
+              Microsoft 365 for business.
+            </p>
+
+            <a href="#" class="business-card-button">Learn more</a>
+          </div>
+        </article>
+
+        <!-- Card 3: Azure Innovation -->
+        <article class="business-card">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Feature-Azure-Wave-Off-White?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+            alt="Microsoft Azure innovation" />
+
+          <div class="business-card-content">
+            <h3>Limitless innovation</h3>
+
+            <p>
+              Design, fuel and operationalise systems that learn and adapt –
+              with Azure.
+            </p>
+
+            <a href="#" class="business-card-button">Get started with Azure</a>
+          </div>
+        </article>
+
+        <!-- Card 4: Microsoft Teams -->
+        <article class="business-card">
+          <img
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Content-Card-Microsoft-Teams-Commercial-Meeting?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=450&qlt=85&fit=constrain"
+            alt="Microsoft Teams for business" />
+
+          <div class="business-card-content">
+            <h3>Get Microsoft Teams for your business</h3>
+
+            <p>
+              Online meetings, chat, real-time collaboration, and shared cloud
+              storage - all in one place.
+            </p>
+
+            <a href="#" class="business-card-button">
+              Find the right plan for your business
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Less Plastic, More Planet Section -->
+    <section class="planet-section">
+      <div class="planet-content">
+        <h2>Less plastic, more planet</h2>
+
+        <p>
+          From phasing out single-use plastics to monitoring our climate,
+          discover how Microsoft is helping protect and support the planet.
+        </p>
+
+        <a href="#" class="planet-button">Learn more</a>
+      </div>
+
+      <div class="planet-image">
+        <img
+          src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Card-Horizontal-AI-Sustainability-Less-Plastic?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=3840&hei=2160&qlt=95&fit=constrain"
+          alt="Abstract pattern of illuminated droplets representing the planet" />
+      </div>
+    </section>
+
+    <!-- Follow Microsoft Section -->
+    <section class="follow-microsoft">
+      <p>Follow Microsoft</p>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Follow Microsoft on Facebook">
+          <i class="ri-facebook-circle-fill"></i>
+        </a>
+
+        <a href="#" aria-label="Follow Microsoft on X">
+          <i class="ri-twitter-x-line"></i>
+        </a>
+
+        <a href="#" aria-label="Follow Microsoft on YouTube">
+          <i class="ri-youtube-fill"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="big-footer">
+    <!-- Footer Column -->
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>What's new</h3>
+        <a href="#">Surface Pro</a>
+        <a href="#">Surface Laptop</a>
+        <a href="#">Explore Copilot</a>
+        <a href="#">Microsoft 365</a>
+        <a href="#">Explore Microsoft products</a>
+        <a href="#">Windows 11 apps</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Microsoft Store</h3>
+        <a href="#">Account profile</a>
+        <a href="#">Download Center</a>
+        <a href="#">Microsoft Store Support</a>
+        <a href="#">Returns</a>
+        <a href="#">Order tracking</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Education</h3>
+        <a href="#">Microsoft in education</a>
+        <a href="#">Devices for education</a>
+        <a href="#">Microsoft Teams for Education</a>
+        <a href="#">Microsoft 365 Education</a>
+        <a href="#">Office Education</a>
+        <a href="#">Educator training and development</a>
+        <a href="#">Deals for students and parents</a>
+        <a href="#">Azure for students</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Business</h3>
+        <a href="#">Microsoft AI</a>
+        <a href="#">Microsoft Security</a>
+        <a href="#">Azure</a>
+        <a href="#">Dynamics 365</a>
+        <a href="#">Microsoft 365</a>
+        <a href="#">Microsoft Advertising</a>
+        <a href="#">Microsoft Copilot</a>
+        <a href="#">Microsoft Teams</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Developer &amp; IT</h3>
+        <a href="#">Microsoft Developer</a>
+        <a href="#">Microsoft Learn</a>
+        <a href="#">Support for AI marketplace apps</a>
+        <a href="#">Microsoft Tech Community</a>
+        <a href="#">Microsoft Marketplace</a>
+        <a href="#">Microsoft Power Platform</a>
+        <a href="#">Software companies</a>
+        <a href="#">Visual Studio</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <a href="#">Careers</a>
+        <a href="#">About Microsoft</a>
+        <a href="#">Company news</a>
+        <a href="#">Privacy at Microsoft</a>
+        <a href="#">Investors</a>
+        <a href="#">Security</a>
+        <a href="#">Sustainability</a>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Information Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <a href="#">
+          <i class="ri-earth-line"></i>
+          English (India)
+        </a>
+
+        <a href="#">
+          <i class="ri-checkbox-line"></i>
+          Your Privacy Choices
+        </a>
+
+        <a href="#">Consumer Health Privacy</a>
+      </div>
+
+      <div class="footer-bottom-right">
+        <a href="#">Contact Microsoft</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Trademarks</a>
+        <a href="#">About our ads</a>
+        <span>&copy; Microsoft 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mini Footer Section -->
+  <footer class="mini-footer">
+    <p>© 2026 Rounak Kantha. All rights reserved.</p>
+
+    <p>
+      Designed &amp; Developed by
+      <span>Rounak Kantha</span>
+    </p>
+  </footer>
+
+  <!-- Help Widget -->
+  <div class="help-widget" id="helpWidget">
+    <!-- Small Blue Help Button -->
+    <button class="help-button" id="helpButton">
+      <span>Need help? Let's chat</span>
+    </button>
+
+    <!-- Expanded Help Panel -->
+    <div class="help-panel" id="helpPanel" hidden>
+      <h2>Can we help you?</h2>
+
+      <p>Store Assistant is available 24/7.</p>
+
+      <div class="help-panel-buttons">
+        <button id="chatNowButton">Chat now</button>
+        <button id="noThanksButton">No thanks</button>
+      </div>
+    </div>
+
+    <!-- Online Avatar Image -->
+    <img class="help-avatar"
+      src="https://images.pexels.com/photos/7709190/pexels-photo-7709190.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+      alt="Help assistant avatar" />
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <span>Back to top</span>
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- Link JavaScript file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
